@@ -1,0 +1,4 @@
+ 
+# geodemora module
+
+::: geodemora.geodemora
