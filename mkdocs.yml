@@ -24,7 +24,7 @@ plugins:
     - mkdocs-jupyter:
           include_source: True
         #   ignore_h1_titles: True
-        #   execute: True
+          execute: True
         #   execute_ignore: "*.ipynb"
           
 markdown_extensions:
@@ -50,3 +50,6 @@ nav:
     - Report Issues: https://github.com/ramendra1990/geodemora/issues
     - API Reference:
           - geodemora module: geodemora.md
+    - Notebooks:
+          - notebooks/ipyleaflet_intro.ipynb
+          - notebooks/folium_intro.ipynb
