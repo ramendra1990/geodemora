@@ -54,3 +54,5 @@ nav:
           - notebooks/ipyleaflet_intro.ipynb
           - notebooks/folium_intro.ipynb
           - notebooks/geodemora_intro.ipynb
+          - notebooks/add_shapefile.ipynb
+          - notebooks/geojson_tutorial.ipynb
