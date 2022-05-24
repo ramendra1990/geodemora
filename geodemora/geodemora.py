@@ -1,8 +1,4 @@
-"""Main module for the geodemora package.\n
-   Returns the number of streams corresponding to each Strahler order, $`a^2 + b^2 = c^2`$, r`$N_{\omega}$`.
-   ```math
-    a^2+b^2=c^2
-   ```
+"""Main module for the geodemora package
 """
 import os
 import ipyleaflet
