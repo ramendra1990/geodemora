@@ -50,6 +50,7 @@ nav:
     - Report Issues: https://github.com/ramendra1990/geodemora/issues
     - API Reference:
           - geodemora module: geodemora.md
+          - utils module: utils.md
     - Notebooks:
           - notebooks/ipyleaflet_intro.ipynb
           - notebooks/folium_intro.ipynb
