@@ -1,3 +1,5 @@
+earthengine-api
 folium
+GDAL
 ipyleaflet
 pyshp

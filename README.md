@@ -1,7 +1,6 @@
 # geodemora
 
 [![image](https://img.shields.io/pypi/v/geodemora.svg)](https://pypi.python.org/pypi/geodemora)
-
 [![image](https://img.shields.io/conda/vn/conda-forge/geodemora.svg)](https://anaconda.org/conda-forge/geodemora)
 
 [![image](https://img.shields.io/conda/vn/conda-forge/geodemora.svg)](https://anaconda.org/conda-forge/geodemora)
