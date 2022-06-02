@@ -57,3 +57,4 @@ nav:
           - notebooks/geodemora_intro.ipynb
           - notebooks/add_shapefile.ipynb
           - notebooks/geojson_tutorial.ipynb
+          - notebooks/earthengine_intro.ipynb
