@@ -21,6 +21,14 @@ plugins:
     - search
     - mkdocstrings
     - git-revision-date
+    - mkdocstrings:
+        handlers:
+            python:
+                setup_commands:
+                    - import sys
+                    - sys.path.append('../')
+                selection:
+                    new_path_syntax: true
     - mkdocs-jupyter:
           include_source: True
         #   ignore_h1_titles: True
