@@ -6,6 +6,7 @@ import ipyleaflet
 from ipyleaflet import FullScreenControl, LayersControl, DrawControl, MeasureControl, ScaleControl, TileLayer
 from .utils import random_string
 from .common import ee_initialize
+from .spatial import nFields
 
 class Map(ipyleaflet.Map):
     """This Map class inherits the ipyleaftlet Map class.
