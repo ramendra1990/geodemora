@@ -36,6 +36,10 @@ jobs:
                   pip install --user --no-cache-dir Cython
                   pip install --user -r requirements.txt
                   pip install --user -r requirements_dev.txt
+            - name: Install GDAL dependencies
+              run: |
+                  $CONDA/bin/conda env update --file environment.yml --name base
+                  python setup.py install
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/
