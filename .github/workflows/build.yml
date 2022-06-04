@@ -15,11 +15,11 @@ jobs:
             fail-fast: false
             matrix:
                 config:
-                    - { os: windows-latest, py: "3.9" }
-                    - { os: macOS-latest, py: "3.9" }
+                    # - { os: windows-latest, py: "3.7" }
+                    - { os: macOS-latest, py: "3.7" }
+                    - { os: ubuntu-latest, py: "3.6" }
                     - { os: ubuntu-latest, py: "3.7" }
                     - { os: ubuntu-latest, py: "3.8" }
-                    - { os: ubuntu-latest, py: "3.9" }
 
         env:
             SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
@@ -36,10 +36,6 @@ jobs:
                   pip install --user --no-cache-dir Cython
                   pip install --user -r requirements.txt
                   pip install --user -r requirements_dev.txt
-            - name: Install GDAL dependencies
-              run: |
-                  $CONDA/bin/conda env update --file environment.yml --name base
-                  python setup.py install
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/

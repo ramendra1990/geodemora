@@ -1,4 +1,11 @@
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - geopandas
+  - pip:
+    - earthengine-api
+    - folium
+    - geopandas
+    - ipyleaflet
+    - pyshp
