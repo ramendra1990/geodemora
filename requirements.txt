@@ -3,4 +3,5 @@ folium
 GDAL
 geopandas
 ipyleaflet
+numpy
 pyshp
