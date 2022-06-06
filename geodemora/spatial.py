@@ -1,5 +1,6 @@
 import geopandas as gpd
 # from osgeo import gdal
+import rasterio
 
 def nFields(shapeFile):
     """Returns number of fields in a shapefile
@@ -8,13 +9,13 @@ def nFields(shapeFile):
     gdf = gpd.read_file(shapeFile)
     return len(gdf.columns)
 
-# def rasterInfo(raster):
+def rasterInfo(raster):
     
-#         ds = gdal.Open(raster)
-#         xRes = ds.GetGeoTransform()[1]
-#         yRes = ds.GetGeoTransform()[-1] * (-1)
-#         ncols = ds.RasterXSize
-#         nrows = ds.RasterYSize
-        
-#         return {'ncols' : ncols, 'nrows' : nrows, 
-#                 'xRes' : xRes, 'yRes' : yRes}
+    ds = rasterio.open(raster)
+    xRes = ds.transform[0]
+    yRes = ds.transform[4] * (-1)
+    ncols = ds.width
+    nrows = ds.height
+    
+    return {'ncols' : ncols, 'nrows' : nrows, 
+            'xRes' : xRes, 'yRes' : yRes}
